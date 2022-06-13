@@ -1,0 +1,47 @@
+$record_color: #ff4351;
+$color_of_record_button: #fff;
+$stop_color: #4cb0f9;
+$body_color: #eee;
+body {
+  background-color: $body_color;
+}
+.recorder_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin: 2rem auto;
+  width: 300px;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 4px;
+  .btn {
+    margin-top: 1.5rem;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    margin-top: 1.5rem;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    color: $color_of_record_button;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all ease .5s;
+  }
+  .btn-record {
+    border-color: $record_color;
+    background: $record_color;
+    box-shadow: 0 7px 0 #903939, 0 8px 3px rgb(0 0 0 / 30%);
+    &:hover {
+      background: #892b2b;
+    }
+  }
+  .btn-stop {
+    border-color: $stop_color;
+    background: $stop_color;
+    box-shadow: 0 7px 0 #077ace, 0 8px 3px rgb(0 0 0 / 20%);
+    &:hover {
+        background: #2d99e6;
+      }
+  }
+}
