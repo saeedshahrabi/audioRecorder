@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`record component should render VoiceRecorder component 1`] = `
+<div
+  className="recorder_container"
+>
+  <button
+    data-testid="record"
+    onClick={[Function]}
+  >
+    Record
+  </button>
+</div>
+`;
